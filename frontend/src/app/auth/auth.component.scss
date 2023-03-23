@@ -38,5 +38,9 @@
       pointer-events: none;
     }
   }
-  
+  .error {
+    margin: 8px 0;
+    text-align: center;
+    color: rgb(176, 0, 0);
+  }
 }
