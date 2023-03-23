@@ -26,6 +26,8 @@ After five minutes of being on the site, he should get a modal window that block
 3) When a user reloads the page, the timer should continue from where it stopped.
 4) How would you do it if it needs to be done on the server and the user is logged in from different devices? (the counter must be common for all devices)
 
+=======
+
 1) I am against using NgRxish libriries at all, and not only me, there are a few beacons of light in the Internet which have the similar thought :)
 2) Done
 3) Done
