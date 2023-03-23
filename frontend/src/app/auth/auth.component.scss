@@ -1,0 +1,42 @@
+.app-auth {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+  }
+  .primary-btn {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: rgb(212, 102, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background-color: rgb(223, 148, 78);
+    }
+    &:active {
+      background-color: rgb(137, 75, 18);
+    }
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+  
+}
