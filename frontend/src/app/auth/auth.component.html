@@ -1,8 +1,10 @@
 <div class="app-auth">
-  <div class="container">
-    <input class="input" type="text" [(ngModel)]="user.username" [disabled]="isLoggedIn"/>
-    <input class="input" type="password" [(ngModel)]="user.password" [disabled]="isLoggedIn">
+  <form class="container" (submit)="login(user)">
+    <div class="label">Username:</div>
+    <input class="input" name="username" type="text" [(ngModel)]="user.username" [disabled]="isLoggedIn"/>
+    <div class="label">Password:</div>
+    <input class="input" name="password" type="password" [(ngModel)]="user.password" [disabled]="isLoggedIn">
     <button class="primary-btn" (click)="login(user)" [disabled]="isLoggedIn">Login</button>
     <span class="error" *ngIf="errorText">{{errorText}}</span>
-  </div>
+  </form>
 </div>

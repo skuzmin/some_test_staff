@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
-    this.counter = this.authService.counter
+    this.counter = this.authService.counter$
       .pipe(map((result: number) => this.getTimerValue(result)));
   }
 
